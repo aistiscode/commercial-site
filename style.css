@@ -1,0 +1,121 @@
+body{
+    margin: 0;
+    height: 120vh;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: purple;
+}
+
+ul{
+    display: inline-block;
+}
+
+ul li{
+    display: inline;
+}
+
+.actions{
+    display: inline-block;
+    position: relative;
+    left: 75%;
+}
+
+.main-card, .subcards-container{
+    width: 90vw;
+    margin: auto;
+}
+
+.main-card{
+    background-color: green;
+}
+
+.main-card img{
+    height: 20vh;
+    position: relative;
+    left:80%;
+}
+.subcards-container{
+    background-color: grey;
+}
+
+main{
+    position: relative;
+    margin-top: 20%;
+}
+
+.subcard-yellow{
+    background-color: yellow;
+    display: inline-block;
+    width: 55%;
+}
+
+.subcard-teal{
+    background-color: teal;
+    display: inline-block;
+    width: 40%;
+}
+
+
+.main-card h1{
+    animation-name: fadeInLeft;
+    animation-duration: 0.5s;
+}
+
+.main-card p{
+    animation-name: fadeInRight;
+    animation-duration: 0.5s;
+  }
+
+.main-card img{
+    animation-name: fadeIn;
+    animation-duration: 0.5s;
+}
+
+@keyframes slide-in {
+    0%{
+        margin-left: 200px;
+    }
+    100%{
+        margin-left: 0px;
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+      opacity: 0;
+      transform: translate3d(-100%, 0, 0);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+
+  @keyframes fadeInRight {
+    from {
+      opacity: 0;
+      transform: translate3d(100%, 0, 0);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
